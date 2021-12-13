@@ -6,7 +6,7 @@ public class PatronObservador {
         Evento evento = new Evento();
 
         evento.agregaObservador(eventito -> {
-            System.out.println("Recibimos el evento -> "+eventito);
+            System.out.println("Recibimos el evento -> " + eventito);
         });
 
         evento.leeTeclado();

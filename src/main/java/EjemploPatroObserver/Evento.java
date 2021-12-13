@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 public class Evento {
 
-    public interface Observador{
+    public interface Observador {
         void actualizar(String evento);
     }
 
     private final List<Observador> observadores = new ArrayList<>();
 
-    private void notificarObservador(String evento){
+    private void notificarObservador(String evento) {
         observadores.forEach(obs -> obs.actualizar(evento));
     }
 
@@ -22,7 +22,7 @@ public class Evento {
 
     public void leeTeclado() {
         Scanner scanner = new Scanner(System.in);
-        while(scanner.hasNextLine()){
+        while (scanner.hasNextLine()) {
             String linea = scanner.nextLine();
             notificarObservador(linea);
         }

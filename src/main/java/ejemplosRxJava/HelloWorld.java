@@ -53,7 +53,7 @@ public class HelloWorld {
                 .firstElement()
                 //.lastElement()
                 .count()
-                .subscribe(cadena -> System.out.println(cadena));
+                .subscribe(System.out::print);
 
 
     }

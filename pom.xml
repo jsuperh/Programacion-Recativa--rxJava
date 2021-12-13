@@ -14,6 +14,7 @@
     </properties>
 
     <dependencies>
+        <!-- Dependencias de rxjava -->
         <dependency>
             <groupId>io.reactivex.rxjava3</groupId>
             <artifactId>rxjava</artifactId>
